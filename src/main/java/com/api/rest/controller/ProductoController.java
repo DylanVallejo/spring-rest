@@ -33,7 +33,7 @@ public class ProductoController {
 
 
     @PutMapping
-    public Producto actualizarProducto(@PathVariable Producto producto){
+    public Producto actualizarProducto(@RequestBody Producto producto){
         return productoService.updateProducto(producto);
     }
 
