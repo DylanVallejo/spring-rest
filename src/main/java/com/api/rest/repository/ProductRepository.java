@@ -16,17 +16,21 @@ public class ProductRepository {
 
 //    crear productos o agregar valores a la lista
     public void createProductos(){
-        productos = List.of(
+        productos.addAll(List.of(
                 new Producto(1, "Producto 01", 10, 1000),
-                new Producto(1, "Producto 02", 11, 9000),
-                new Producto(1, "Producto 03", 12, 8000),
-                new Producto(1, "Producto 04", 13, 7000),
-                new Producto(1, "Producto 05", 14, 6000),
-                new Producto(1, "Producto 06", 15, 5000),
-                new Producto(1, "Producto 07", 16, 4000),
-                new Producto(1, "Producto 08", 17, 3000),
-                new Producto(1, "Producto 09", 18, 2000)
-        );
+                new Producto(2, "Producto 02", 11, 9000),
+                new Producto(3, "Producto 03", 12, 8000),
+                new Producto(4, "Producto 04", 13, 7000),
+                new Producto(5, "Producto 05", 14, 6000),
+                new Producto(6, "Producto 06", 15, 5000),
+                new Producto(7, "Producto 07", 16, 4000),
+                new Producto(8, "Producto 08", 17, 3000),
+                new Producto(9, "Producto 09", 18, 2000)
+        ));
+    }
+
+    public ProductRepository(){
+        createProductos();
     }
 
 //listar todos los productos
